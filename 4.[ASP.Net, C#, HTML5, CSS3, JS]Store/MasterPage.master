@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>فروشگاه</title>
+    <link rel="Stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link type="text/javascript" href="html5shiv.js" />
+    <script type="text/javascript" src="zepto.js" ></script>
+    <script type="text/javascript" src="rating.js" ></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div class='container' >
+	<div class='header'>	
+		<div class='upheader'>
+			<div class='header-links'>
+				<nav class='topmenu'>
+					<menu>
+						<li style="padding-left:15px;">  
+                                <span class='box_arrow' style="margin-top:12px; margin-left:-7px;"> 
+                            		<span class='arrow'> </span>
+                            	</span> 
+							<a id="link_login" href="Login.aspx" runat="server">
+                            	سلام، ورود
+                            </a> 
+							<menu>
+								<li> <a href="#">سوابق خرید</a> </li>
+								<li> <a href="#">سفارشات</a> </li>
+								<li> <a href="#">مشخصات کاربری</a> </li>
+								<li>
+                                    <abbr title="مشتری جدید می باشم"> 
+                                        <asp:LinkButton ID="link_register" style="color:blue;" runat="server" 
+                                        onclick="link_register_Click" Text="ثبت نام">   
+                                        </asp:LinkButton>
+                                    </abbr> 
+                                </li>
+							</menu>
+						</li>
+						<li> 
+							<a href="#">
+                            	<span class='box_arrow'> 
+                            		<span class='arrow'> </span>
+                          		</span> 
+                          	  پشتیبانی
+                            </a> 
+							<menu>
+								<li> <a href="#">پیگیری خریدها</a> </li>
+								<li> <a href="#"> پشتیبانی</a> </li>
+								<li> <a href="#">اعتراض</a> </li>
+							</menu>
+						</li>
+						<li> 
+							<a href="#"> 
+                            	<span class='box_arrow'> 
+                            		<span class='arrow'> </span>
+                           		</span> 
+                            	راهنما 
+                            </a> 
+							<menu>
+								<li> <a href="#">راهنمای خرید</a> </li>
+								<li> <a href="#">راهنمای خدمات سایت </a> </li>
+								<li> <a href="#">درباره ما</a> </li>
+							</menu>
+						</li>
+						<li class="singlenode"> <a href="ContactUs.aspx">ارتباط با ما</a> </li>
+					</menu>
+                    <div class="badboy"></div>
+				</nav>
+			</div>
+			<div class='logo'>
+				<a href="Default.aspx"><img src="Images/Icons/Company.png" height="40" width="130" style="text-align:left;" /></a>
+			</div>
+			<div class='search-bar'>
+                    <asp:TextBox ID="txt_Search"  runat="server" Class="txt_search" 
+                        Text="جست وجو..."></asp:TextBox>
+                    <asp:DropDownList ID="DropDownList_Search" class='dropdown_search' runat="server">
+                        <asp:ListItem>همه گروه ها</asp:ListItem>
+                        <asp:ListItem>لپ تاپ</asp:ListItem>
+                        <asp:ListItem>تبلت</asp:ListItem>
+                        <asp:ListItem>موبایل</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:Button ID="btn_Search" runat="server" class='btn_search' Text="جست وجو" />
+            </div>
+            <div class="badboy"></div>
+		</div>
+		<div class='subheader'>
+			<div class='menu'>
+				<ul class="rightmenu">
+					<li class="topfirst">
+						<a href="Default.aspx" ><img src="Images/Icons/Home.png" width='32' height='32'alt=""/>نخست</a>
+					</li>
+					<li class="#">
+						<a href="Laptop.aspx" ><img src="Images/Icons/Laptop.png" width='32' height='32'alt=""/>لپ تاپ</a>
+					</li>
+					<li class="topmenu">
+						<a href="#" ><img src="Images/Icons/Tablet.png" width='32' height='32'alt=""/>تبلت</a>
+					</li>
+					<li class="toplast">
+						<a href="Mobile.aspx" ><img src="Images/Icons/Mobile.png" width='32' height='32'alt=""/>موبایل</a>
+					</li>
+				</ul>
+			</div>
+			    <div class="slider">
+				    <div class="view">
+					    <div id="scroll">
+						    <div>
+							    <a href="#"><img src="Images/Slider/slider (1).jpg" width="700"  height="220"/></a>
+						    </div>
+						    <div>
+							    <a href="#"><img src="Images/Slider/slider (2).jpg" width="700"  height="220"/></a>
+						    </div>
+						    <div>
+							    <a href="#"><img src="Images/Slider/slider (3).jpg" width="700"  height="220"/></a>
+						    </div>
+						    <div>
+							    <a href="#"><img src="Images/Slider/slider (4).jpg" width="700"  height="220"/></a>
+						    </div>
+					    </div>
+					    <div id="circle-slider">
+						    <ul>
+							    <li><a id="circle1" href="#" onclick="show_pic(1)"></a></li>
+							    <li><a id="circle2" href="#" onclick="show_pic(2)"></a></li>
+							    <li><a id="circle3" href="#" onclick="show_pic(3)"></a></li>
+							    <li><a id="circle4" href="#" onclick="show_pic(4)"></a></li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+			<div class='badboy'>
+			</div>
+		</div>		
+	</div>
+	<div class="mid">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">      
+        </asp:ContentPlaceHolder>
+	</div>
+	<div class='footer'>
+        <div class="companies">
+        	<ul class='companylist'>
+            	<li>
+                	<a href="#"> 
+                    	<span> HP </span>
+                    	<img src='Images/Logo/HP_Logo.PNG' />
+                    </a>
+                </li>
+                <li>
+                	<a href="#">  
+                    	<span> LG </span>
+                        <img src='Images/Logo/LG_logo.png' />
+                    </a>
+                </li>
+            	<li>
+                	<a href="#"> 
+                    	<span> SONY </span>
+                        <img src='Images/Logo/Sony_Logo.png' /> 
+                    </a>
+                </li> 
+                <li>
+                	<a href="#"> 
+                    	<span> MicroSoft </span>
+                        <img src='Images/Logo/MicroSoft_Logo.png' /> 
+                    </a>
+                </li>       
+                <li>
+                	<a href="#"> 
+                    	<span> Apple </span>
+                    	<img src='Images/Logo/Apple_Logo.png' />
+                    </a>
+                </li>
+            	<li>
+                	<a href="#"> 
+                    	<span> Dell </span>
+                    	<img src='Images/Logo/Dell_logo.png' />
+                    </a>
+                </li>
+            	<li>
+                	<a href="#"> 
+                    	<span> Motorola </span>
+                    	<img src='Images/Logo/Motorola_logo.png' />
+                    </a>
+                </li>                                      
+            </ul>
+ 			<div class="badboy"></div>
+        </div>
+        <div class="Fmenu">
+        	<ul class="Footer_Menu">
+            	<li>
+                	<a href="#"> حقوق و قوانین </a>
+                    <span> | </span>
+                </li>
+                <li>
+                	<a href="#"> تبلیغات در سایت </a>
+                    <span> | </span>
+                </li>
+                <li>
+                	<a href="#"> تماس با ما</a>
+                    <span> | </span>
+                </li>
+            	<li>
+                	<a href="#"> درباره ما </a>
+                </li>               	
+            </ul>
+            <div class="badboy"></div>
+        </div>
+        <div class="FText">
+        	<p> 
+            	استفاده از مطالب این سايت برای مقاصد غیر تجاری و با ذکر منبع بلامانع است. کليه حقوق اين سايت متعلق به
+                <a href="http://www.mampel.ir/" style="color:#5792bb; text-decoration:none;" target="_blank" > گروه تجاری Mampel </a>
+                می باشد. <br />
+                <a href="http://www.mampel.ir/" style="color:#5792bb; text-decoration:none; direction:ltr;" target="_blank"> Mampel.ir </a> 
+                - Copyright © 2012 - All Rights Reserved
+            </p>
+        </div>
+	</div>
+    <div class='Cart_fixed'>
+        <asp:Image ID="img_cart" runat="server" ImageUrl="~/Images/Icons/shop-cart-icon.png" Height="32px" Width="32px" />
+	    <asp:LinkButton ID="Link_cart" runat="server" Text="سبد کالا(0 مورد)" 
+            onclick="Link_cart_Click">
+        </asp:LinkButton>    
+    </div>
+</div>
+</form>
+
+<script type="text/javascript">
+    var left = 0;
+
+    function auto_slide() {
+
+        if (left <= -2100) {
+            document.getElementById('scroll').style.left = '0';
+            left = 0;
+        }
+        else {
+            left = left - 700;
+            document.getElementById('scroll').style.left = left + 'px';
+        }
+
+        for (var j = 0; j < 4; j++) {
+            document.getElementById('circle' + (j + 1)).style.backgroundColor = '#ddd';
+        }
+        document.getElementById('circle' + (-left / 700 + 1)).style.backgroundColor = '#8dbcc6';
+    }
+
+    setInterval(auto_slide, 5000);
+
+
+    function show_pic(i) {
+
+        document.getElementById('scroll').style.left = -(i - 1) * 700 + 'px';
+        left = -(i - 2) * 700;
+
+        for (var j = 0; j < 4; j++) {
+            document.getElementById('circle' + (j + 1)).style.backgroundColor = '#ddd';
+        }
+        document.getElementById('circle' + i).style.backgroundColor = '#8dbcc6';
+    }
+	
+	
+</script>
+
+</body>
+</html>
