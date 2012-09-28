@@ -1,0 +1,6 @@
+H:\Final Project\Store\OnlineStoreBL\obj\Debug\ResolveAssemblyReference.cache
+H:\Final Project\Store\OnlineStoreBL\bin\Debug\OnlineStoreBL.dll
+H:\Final Project\Store\OnlineStoreBL\bin\Debug\OnlineStoreBL.pdb
+H:\Final Project\Store\OnlineStoreBL\bin\Debug\Cruder.Core.dll
+H:\Final Project\Store\OnlineStoreBL\obj\Debug\OnlineStoreBL.dll
+H:\Final Project\Store\OnlineStoreBL\obj\Debug\OnlineStoreBL.pdb
