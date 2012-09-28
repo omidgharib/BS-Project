@@ -8,6 +8,7 @@ namespace OnlineStoreBL
 {
     public partial class User
     {
+        //checking for Login
         public static User LoginCheck(string UserName, string Password)
         {
             UserCollection list = new UserCollection();
