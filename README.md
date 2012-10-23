@@ -1,6 +1,6 @@
 ## Online Store Website
 =======================
-This website build for my BS [university] (ub.ac.ir) project
+This website build for my BS [university] (http://ub.ac.ir) project
 
 ### Contributing
 
