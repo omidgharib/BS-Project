@@ -41,7 +41,7 @@ public partial class Default2 : System.Web.UI.Page
         {
             var fromAddress = "omidgharib1990@gmail.com";
             var toAddress = "omidgharib@yahoo.com";
-            const string fromPassword = "omg357753";
+            const string fromPassword = "yourPassword";
             string subject = " ارتباط با ما ";
             string body = "Name:   " + txt_Name.Text + "\n";
             body += "Email:   " + txt_EmailAddress.Text + "\n";
