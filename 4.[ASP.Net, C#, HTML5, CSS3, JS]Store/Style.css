@@ -1,5 +1,14 @@
-body{
+﻿body{
 	background-color: rgb(242,242,242);
+	font-family: 'nazanin','mitra','iraniansans', monospace, Tahoma !important;
+}
+
+*{
+	font-family: 'nazanin','mitra', 'iraniansans', monospace, Tahoma !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'iraniansans', 'nazanin','mitra', monospace, Tahoma !important;
 }
 
 div.badboy{
@@ -129,6 +138,7 @@ div.FText p {
 	font-family : "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;	
 	font-size	: 12px;	
 	text-align	: center;
+	line-height	: 20px;
 }
 div.Cart_fixed{
 /*
@@ -637,7 +647,7 @@ div.product_LastOne img{
 
 div.product span,
 div.product_LastOne span{
-	font: 11px Verdana,Geneva,sans-serif;	
+	font: 13px Verdana,Geneva,sans-serif;	
 	height: 20px;	
 	display: block;
 }
@@ -646,7 +656,7 @@ div.product a,
 div.product_LastOne a{
 	color: #ffa800;
 	text-decoration:none;
-	font: 11px Verdana,Geneva,sans-serif;	
+	font: 13px Verdana,Geneva,sans-serif;	
 }
 
 .btn_addtocart{

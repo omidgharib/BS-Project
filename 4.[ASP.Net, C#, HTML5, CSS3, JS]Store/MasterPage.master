@@ -6,6 +6,7 @@
 <head runat="server">
     <title>فروشگاه</title>
     <link rel="Stylesheet" type="text/css" href="reset.css" />
+    <link href='http://alimd.github.io/libs/1fonts/1.4/1fonts.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link type="text/javascript" href="html5shiv.js" />
     <script type="text/javascript" src="zepto.js" ></script>
@@ -26,7 +27,7 @@
                             		<span class='arrow'> </span>
                             	</span> 
 							<a id="link_login" href="Login.aspx" runat="server">
-                            	سلام، ورود
+                             ورود
                             </a> 
 							<menu>
 								<li> <a href="#">سوابق خرید</a> </li>
@@ -73,7 +74,7 @@
 				</nav>
 			</div>
 			<div class='logo'>
-				<a href="Default.aspx"><img src="Images/Icons/Company.png" height="40" width="130" style="text-align:left;" /></a>
+				<a href="Default.aspx"></a>
 			</div>
 			<div class='search-bar'>
                     <asp:TextBox ID="txt_Search"  runat="server" Class="txt_search" 
@@ -98,7 +99,7 @@
 						<a href="Laptop.aspx" ><img src="Images/Icons/Laptop.png" width='32' height='32'alt=""/>لپ تاپ</a>
 					</li>
 					<li class="topmenu">
-						<a href="#" ><img src="Images/Icons/Tablet.png" width='32' height='32'alt=""/>تبلت</a>
+						<a href="tablet.aspx" ><img src="Images/Icons/Tablet.png" width='32' height='32'alt=""/>تبلت</a>
 					</li>
 					<li class="toplast">
 						<a href="Mobile.aspx" ><img src="Images/Icons/Mobile.png" width='32' height='32'alt=""/>موبایل</a>
@@ -210,9 +211,8 @@
         <div class="FText">
         	<p> 
             	استفاده از مطالب این سايت برای مقاصد غیر تجاری و با ذکر منبع بلامانع است. کليه حقوق اين سايت متعلق به
-                <a href="http://www.mampel.ir/" style="color:#5792bb; text-decoration:none;" target="_blank" > گروه تجاری Mampel </a>
+               هومن شریفیان
                 می باشد. <br />
-                <a href="http://www.mampel.ir/" style="color:#5792bb; text-decoration:none; direction:ltr;" target="_blank"> Mampel.ir </a> 
                 - Copyright © 2012 - All Rights Reserved
             </p>
         </div>

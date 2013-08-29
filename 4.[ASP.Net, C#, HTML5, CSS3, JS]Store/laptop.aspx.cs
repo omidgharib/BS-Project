@@ -25,7 +25,7 @@ public partial class Default2 : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         /////////////////////////////fill the product boxes///////////////////////////////////
-        ProductCollection products = Product.tablets();
+        ProductCollection products = Product.laptop();
         //////BOX1/////
         lbl_title1.Text = products[0].Brand + "-" + products[0].ProductName;
         lbl_id1.Text = products[0].ProductId;
@@ -63,18 +63,9 @@ public partial class Default2 : System.Web.UI.Page
         lbl_price6.Text = "قیمت: " + products[5].Price + " تومان";
         ////////
         //////BOX7/////
-        lbl_title7.Text = products[6].Brand + "-" + products[6].ProductName;
-        lbl_id7.Text = products[6].ProductId;
-        img_product7.ImageUrl = "./Images/Products/" + products[6].Discount;
-        lbl_price7.Text = "قیمت: " + products[6].Price + " تومان";
-        ////////
-        //////BOX8/////
-        lbl_title8.Text = products[7].Brand + "-" + products[7].ProductName;
-        lbl_id8.Text = products[7].ProductId;
-        img_product8.ImageUrl = "./Images/Products/" + products[7].Discount;
-        lbl_price8.Text = "قیمت: " + products[7].Price + " تومان";
-        ////////
+ 
     }
+
     protected void btn_addtocart1_Click(object sender, EventArgs e)
     {
         ADDToCart(lbl_id1.Text);
@@ -98,14 +89,6 @@ public partial class Default2 : System.Web.UI.Page
     protected void btn_addtocart6_Click(object sender, EventArgs e)
     {
         ADDToCart(lbl_id6.Text);
-    }
-    protected void btn_addtocart7_Click(object sender, EventArgs e)
-    {
-        ADDToCart(lbl_id7.Text);
-    }
-    protected void btn_addtocart8_Click(object sender, EventArgs e)
-    {
-        ADDToCart(lbl_id8.Text);
     }
 
     private void ADDToCart(string productId)

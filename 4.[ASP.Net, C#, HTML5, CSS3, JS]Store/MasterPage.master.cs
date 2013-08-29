@@ -23,12 +23,12 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         if (currentmember==null)
         {
-            link_login.InnerText = "سلام، ورود";
+            link_login.InnerText = "ورود";
             link_register.Text = "ثبت نام";
         }
         else
         {
-            link_login.InnerText = "سلام " + currentmember.Name.ToString();
+            link_login.InnerText = currentmember.Name.ToString();
             link_register.Text = "خروج";
             //link_register.
         }
@@ -64,7 +64,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void link_login_Click(object sender, EventArgs e)
     {
 
-        if (link_login.InnerText == "سلام، ورود")
+        if (link_login.InnerText == " ورود")
         {
             Response.Redirect("Login.aspx");
         }

@@ -1,12 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Tablet.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="laptop.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class='content_bestproduct'>
+     <div class='content_bestproduct'>
     <div class='nbox' >
         <div class='header_products'>
-            <h2> تبلت </h2>
+            <h2> لپ تاپ </h2>
         </div>
         <div class='product_box'>
             <div class='product'>
@@ -86,32 +86,8 @@
                 <asp:Button ID="btn_addtocart6" runat="server" Text="اضافه کردن به سبد" 
                     class='btn_addtocart' onclick="btn_addtocart6_Click"/>
             </div> 
-            <div class='product'>
-                <h2>  <asp:Label ID="lbl_title7" runat="server" Text="SONY"></asp:Label>  </h2>
-                <h3>  <asp:Label ID="lbl_id7" runat="server" Text="cqr12"></asp:Label>  </h3>
-                <asp:Image ID="img_product7" runat="server" ImageUrl="~/Images/Products/sony_xperia.jpeg" />
-                <asp:Label ID="lbl_price7" runat="server" Text="قیمت:2000ریال"></asp:Label>
-                <br />
-                <asp:LinkButton ID="link_details7" runat="server">
-                    جزییات بیشتر
-                </asp:LinkButton>
-                <asp:Button ID="btn_addtocart7" runat="server" Text="اضافه کردن به سبد" 
-                    class='btn_addtocart' onclick="btn_addtocart7_Click"/>
-            </div> 
-            <div class='product'>
-                <h2>  <asp:Label ID="lbl_title8" runat="server" Text="SONY"></asp:Label>  </h2>
-                <h3>  <asp:Label ID="lbl_id8" runat="server" Text="cqr12"></asp:Label>  </h3>
-                <asp:Image ID="img_product8" runat="server" ImageUrl="~/Images/Products/sony_xperia.jpeg" />
-                <asp:Label ID="lbl_price8" runat="server" Text="قیمت:2000ریال"></asp:Label>
-                <br />
-                <asp:LinkButton ID="link_details8" runat="server">
-                    جزییات بیشتر
-                </asp:LinkButton>
-                <asp:Button ID="btn_addtocart8" runat="server" Text="اضافه کردن به سبد" 
-                    class='btn_addtocart' onclick="btn_addtocart8_Click"/>
-            </div>
             <div class='badboy'></div> 
-            </div> 
+        </div> 
     </div>
 </asp:Content>
 
