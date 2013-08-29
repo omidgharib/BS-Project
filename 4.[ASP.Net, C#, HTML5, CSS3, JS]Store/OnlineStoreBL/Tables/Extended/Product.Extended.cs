@@ -3,8 +3,8 @@ using System.Data;
 using Cruder.Core;
 using Cruder.Core.Base;
 using Cruder.Core.Data;
-
 namespace OnlineStoreBL
+
 {
     public partial class Product
     {
@@ -32,6 +32,18 @@ namespace OnlineStoreBL
         {
             ProductCollection lists = new ProductCollection();
             lists.ReadList(Criteria.NewCriteria(Product.Columns.Category, CriteriaOperators.Like, "mobile"));
+            if (lists.Count != 0)
+            {
+                return lists;
+            }
+            else return null;
+
+        }
+
+        public static ProductCollection laptop()
+        {
+            ProductCollection lists = new ProductCollection();
+            lists.ReadList(Criteria.NewCriteria(Product.Columns.Category, CriteriaOperators.Like, "laptop"));
             if (lists.Count != 0)
             {
                 return lists;

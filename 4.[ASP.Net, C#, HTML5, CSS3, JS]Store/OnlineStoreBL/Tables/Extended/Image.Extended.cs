@@ -8,6 +8,6 @@ namespace OnlineStoreBL
 {
     public partial class Image
     {
-
+       
     }
 }

@@ -4,3 +4,9 @@ H:\Final Project\Store\OnlineStoreBL\bin\Debug\OnlineStoreBL.pdb
 H:\Final Project\Store\OnlineStoreBL\bin\Debug\Cruder.Core.dll
 H:\Final Project\Store\OnlineStoreBL\obj\Debug\OnlineStoreBL.dll
 H:\Final Project\Store\OnlineStoreBL\obj\Debug\OnlineStoreBL.pdb
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\obj\Debug\OnlineStoreBL.dll
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\obj\Debug\OnlineStoreBL.pdb
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\bin\Debug\OnlineStoreBL.dll
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\bin\Debug\OnlineStoreBL.pdb
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\bin\Debug\OnlineStoreBL.dll.CodeAnalysisLog.xml
+C:\Users\omidgharib\Desktop\update\OnlineStore\OnlineStoreBL\bin\Debug\OnlineStoreBL.dll.lastcodeanalysissucceeded
